@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Back;
+namespace App\Core\Http\Controllers\Back;
 
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Back\UserRequest;
-use App\Models\User;
+use App\Core\Http\Controllers\Controller;
+use App\Core\Http\Requests\Back\UserRequest;
+use App\Domains\Users\User;
 
 class UsersController extends Controller
 {

@@ -2,7 +2,7 @@
 
 namespace Tests\Feature\Back;
 
-use App\Models\User;
+use App\Domains\Users\User;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;

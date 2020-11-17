@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers\Back;
+namespace App\Core\Http\Controllers\Back;
 
-use App\Http\Controllers\Controller;
+use App\Core\Http\Controllers\Controller;
 
 class DashboardController extends Controller
 {

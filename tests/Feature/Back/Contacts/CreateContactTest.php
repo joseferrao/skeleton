@@ -2,7 +2,7 @@
 
 namespace Tests\Feature\Back\Contacts;
 
-use App\Models\Contact;
+use App\Domains\Contacts\Contact;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers\Guest;
+namespace App\Core\Http\Controllers\Guest;
 
-use App\Http\Controllers\Controller;
+use App\Core\Http\Controllers\Controller;
 
 class HomeController extends Controller
 {

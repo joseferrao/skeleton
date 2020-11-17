@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Back;
+namespace App\Core\Http\Controllers\Back;
 
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Back\ContactRequest;
-use App\Models\Contact;
+use App\Core\Http\Controllers\Controller;
+use App\Core\Http\Requests\Back\ContactRequest;
+use App\Domains\Contacts\Contact;
 
 class ContactsController extends Controller
 {

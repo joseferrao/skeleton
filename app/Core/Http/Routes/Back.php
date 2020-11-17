@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Routes;
+namespace App\Core\Http\Routes;
 
 use Illuminate\Contracts\Routing\Registrar;
 

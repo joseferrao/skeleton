@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace App\Core\Providers;
 
 use Illuminate\Contracts\Routing\Registrar;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
@@ -15,7 +15,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    protected $namespace = 'App\Http\Controllers';
+    protected $namespace = 'App\Core\Http\Controllers';
 
     /**
      * Define the routes for the application.
@@ -25,11 +25,11 @@ class RouteServiceProvider extends ServiceProvider
     public function map()
     {
         Route::group(['namespace' => "{$this->namespace}", 'middleware' => 'web'], function (Registrar $router) {
-            foreach (glob(app_path('Http//Routes') . '/*.php') as $file) {
+            foreach (glob(app_path('Core//Http//Routes') . '/*.php') as $file) {
                 $namespace = basename($file, '.php');
 
                 $router->group(['namespace' => $namespace], function (Registrar $router) use ($namespace) {
-                    $this->app->make("App\\Http\\Routes\\$namespace")->map($router);
+                    $this->app->make("App\\Core\\Http\\Routes\\$namespace")->map($router);
                 });
             }
         });

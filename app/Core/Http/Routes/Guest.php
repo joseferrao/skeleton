@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Routes;
+namespace App\Core\Http\Routes;
 
 use Illuminate\Contracts\Routing\Registrar;
 
@@ -11,8 +11,10 @@ class Guest
      */
     public function map(Registrar $router)
     {
+
         $router->group(['as' => 'guest.'], function () use ($router) {
             $router->get('/', 'HomeController@index')->name('home');
         });
+
     }
 }
